@@ -46,20 +46,21 @@
 ---
 
 ## 🧪 Testing Instructions
-http://testsafebrowsing.appspot.com/s/malware.html
+http://testsafebrowsing.appspot.com/s/malware.html  
 ⚠️ To test this, Chrome's Safe Browsing protection must be temporarily disabled from:
 - chrome://settings/security
 
 ## 📂 Project Structure
 
 ``` URLShield/
-├── manifest.json # Extension manifest (v3)
-├── background.js # Handles URL checking & blocking
-├── popup.html # Popup interface
-├── popup.js # Shows current tab's URL in popup
-├── block.html # Warning screen shown for malicious URLs
+├── manifest.json 
+├── background.js
+├── popup.html
+├── popup.js
+├── block.html
 └── icons/
-└── icon128.png # Extension icon ```
+   └── icon128.png
+```
      
 ---
 
