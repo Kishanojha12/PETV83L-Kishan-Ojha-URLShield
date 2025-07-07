@@ -40,49 +40,36 @@
    git clone https://github.com/your-username/URLShield.git
 2. Open Chrome and go to:
 3. chrome://extensions/
-
 4. Enable Developer mode (top right)
-
 5. Click "Load unpacked" and select the project folder
-
   The extension icon (🛡️) will appear in the toolbar
+---
 
-##🧪 Testing Instructions
-Open a new tab and go to:
-
-arduino
-Copy
-Edit
-http://example.com/phish
-✅ This is a hardcoded fake phishing URL and will trigger your block.html screen.
-
-You can also test real flagged URLs (if not blocked by Chrome directly), or use:
-
-arduino
-Copy
-Edit
+## 🧪 Testing Instructions
 http://testsafebrowsing.appspot.com/s/malware.html
 ⚠️ To test this, Chrome's Safe Browsing protection must be temporarily disabled from:
-chrome://settings/security
+- chrome://settings/security
 
-##📂 Project Structure
-arduino
-Copy 
-Edit
+## 📂 Project Structure
+
 URLShield/
-├── manifest.json
-├── background.js
-├── popup.html
-├── popup.js
-├── block.html
-└── icons/
-    └── icon128.png
+ ├── manifest.json
+ ├── background.js
+ ├── popup.html
+ ├── popup.js
+ ├── block.html
+ └── icons/
+     └── icon128.png
+     
+---
 
-##👨‍💻 Author
-Kishan Ojha
-Cybersecurity Enthusiast & Builder
-Drop Organisation DCSC Certified | LPU B.Tech CSE
-GitHub
+## 👨‍💻 Author
+- Kishan Ojha
+- Cybersecurity Enthusiast & Builder
+- Drop Organisation DCSC Certified | LPU B.Tech CSE
+- GitHub
+
+---
 
 ⚠️ Disclaimer: This project is for educational purposes only. Always test on safe URLs and avoid using real phishing links without proper isolation.
 
