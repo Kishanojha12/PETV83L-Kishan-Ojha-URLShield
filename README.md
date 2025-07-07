@@ -1,46 +1,91 @@
-🛡️ URLShield – Malicious URL Blocker Chrome Extension
-URLShield is a lightweight Chrome extension that protects users from phishing, malware, and unsafe websites in real-time. It leverages the power of the Google Safe Browsing API to detect and block malicious URLs before they can do harm.
+# 🛡️ URLShield – Chrome Extension for Malicious URL Protection
 
-🚀 Features
-✅ Real-time malicious URL detection using Google Safe Browsing
+**URLShield** is a lightweight Chrome extension that protects users from phishing, malware, and unsafe websites in real-time. It leverages the **Google Safe Browsing API** to detect and block harmful URLs before users visit them.
 
-🔒 Blocks phishing, malware, and harmful links instantly
+---
 
-🔁 Custom testing support with simulated unsafe URLs
+## 🚀 Features
 
-🔔 Sleek popup UI that shows current URL status
+- ✅ Real-time malicious URL detection
+- 🔒 Blocks phishing, malware, and unwanted software
+- ⚡ Fast and lightweight – runs silently in the background
+- 🧪 Test mode support for fake/phishing URLs
+- 🧾 Custom block page with clear warnings
+- 📋 Simple popup UI showing active tab URL
 
-💻 Built with Manifest V3 (latest Chrome extension standard)
+---
 
-🔧 How It Works
-The extension monitors every navigation event in the browser.
+## 🧠 How It Works
 
-Before loading any page, it sends the URL to the Google Safe Browsing API.
+1. When a user navigates to any URL, the extension intercepts the request.
+2. The URL is checked against the **Google Safe Browsing API**.
+3. If a threat is detected, the page is blocked, and the user is redirected to a custom warning page (`block.html`).
+4. For development/testing, custom test URLs like `http://example.com/phish` can be used.
 
-If the URL is flagged as malicious, the user is immediately redirected to a custom block page (block.html).
+---
 
-Safe URLs are allowed without interruption.
+## 🔧 Tech Stack
 
-Users can view the current tab’s URL status through the popup.
+- JavaScript (Vanilla)
+- HTML + CSS
+- Google Safe Browsing API (v4)
+- Chrome Extensions API (Manifest v3)
 
-📁 Tech Stack
-JavaScript (Vanilla)
+---
 
-HTML/CSS
+## 📦 Installation (Developer Mode)
 
-Google Safe Browsing API
+1. Clone or download this repository:
+   ```bash
+   git clone https://github.com/your-username/URLShield.git
+2. Open Chrome and go to:
+3. chrome://extensions/
 
-Chrome Extensions API (Manifest v3)
+4. Enable Developer mode (top right)
 
-🧪 Testing Instructions
-To test the extension:
+5. Click "Load unpacked" and select the project folder
 
-Use http://example.com/phish (hardcoded for testing)
+  The extension icon (🛡️) will appear in the toolbar
 
-OR use http://testsafebrowsing.appspot.com/s/malware.html (after disabling Chrome’s Safe Browsing temporarily)
+##🧪 Testing Instructions
+Open a new tab and go to:
 
-Popup shows active tab’s URL and extension status
+arduino
+Copy
+Edit
+http://example.com/phish
+✅ This is a hardcoded fake phishing URL and will trigger your block.html screen.
 
-🔐 Note
-Google Chrome has built-in Safe Browsing. If a site is already blocked by Chrome, your extension won’t get a chance to intercept it. For development testing, use custom domains or temporarily disable Chrome protection.
+You can also test real flagged URLs (if not blocked by Chrome directly), or use:
 
+arduino
+Copy
+Edit
+http://testsafebrowsing.appspot.com/s/malware.html
+⚠️ To test this, Chrome's Safe Browsing protection must be temporarily disabled from:
+chrome://settings/security
+
+##📂 Project Structure
+arduino
+Copy 
+Edit
+URLShield/
+├── manifest.json
+├── background.js
+├── popup.html
+├── popup.js
+├── block.html
+└── icons/
+    └── icon128.png
+
+##👨‍💻 Author
+Kishan Ojha
+Cybersecurity Enthusiast & Builder
+Drop Organisation DCSC Certified | LPU B.Tech CSE
+GitHub
+
+⚠️ Disclaimer: This project is for educational purposes only. Always test on safe URLs and avoid using real phishing links without proper isolation.
+
+---
+
+Want me to generate a `LICENSE` file or a custom project banner too? Let me know — let’s make your repo 
