@@ -1,4 +1,4 @@
-const API_KEY = "AIzaSyAEo7PxFmCSPvbstaJuc1NY9tYvlHtpk2M"; // 🔁 Replace with your real Google API key
+const API_KEY = "AIzaSyAEo7PxFmCSPvbstaJuc1NY9tYvlHtpk2M"; 
 
 const TEST_URLS = ["http://example.com/phish"]; // fake URLs for testing
 
