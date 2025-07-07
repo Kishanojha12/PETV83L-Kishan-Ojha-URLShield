@@ -52,14 +52,14 @@ http://testsafebrowsing.appspot.com/s/malware.html
 
 ## 📂 Project Structure
 
-URLShield/
- ├── manifest.json
- ├── background.js
- ├── popup.html
- ├── popup.js
- ├── block.html
- └── icons/
-     └── icon128.png
+``` URLShield/
+├── manifest.json # Extension manifest (v3)
+├── background.js # Handles URL checking & blocking
+├── popup.html # Popup interface
+├── popup.js # Shows current tab's URL in popup
+├── block.html # Warning screen shown for malicious URLs
+└── icons/
+└── icon128.png # Extension icon ```
      
 ---
 
